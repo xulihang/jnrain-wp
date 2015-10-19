@@ -1,0 +1,14 @@
+body
+{
+    min-width: 300px;
+    word-wrap: break-word;
+}
+
+blockquote {
+    max-width:300px;
+}
+img
+{
+    max-width:95%;
+    min-width:50px;
+}

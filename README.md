@@ -1,2 +1,7 @@
-# jnrain-wp
-æ±Ÿå—å¬é›¨BBSéžå®˜æ–¹WPå®¢æˆ·ç«¯ / Jnrain BBS's unofficial client for windows phone
+#½­ÄÏÌýÓê¿Í»§¶Ë for windows phone
+
+Êî¼ÙÆðÐËÂòÁËÌ¨htc 8x£¬È»ºó¾Í¿ªÊ¼ÁËÑ§Ï°windows¿ª·¢µÄµÀÂ·¡£¾ßÌåµÄÒ»Ð©ÄÚÈÝÎÒ¶¼·¢ÔÚÎÒµÄ[²©¿Í](http://blog.xulihang.me/becoming-a-wper/)ÀïÁË¡£
+
+ÌýÓêË¥°Ü£¬×î½üÍâÍøÓÖ²»¿ª·Å·ÃÎÊÁË£¬¾ÉÕ¾»ù±¾ÅÐËÀÐÌÁË£¬°ÑÔ´ÂëÉÏ´«µ½githubÉÏ¼ÍÄîÏÂ°É¡£ÍêÈ«ÊÇÐÂÊÖË®Æ½£¬µ«ÊÇÎÒµÚÒ»´ÎÓÃ¹Ù·½Ö§³ÖµÄÓïÑÔÐ´µÄ±È½ÏÕýÊ½µÄÒÆ¶¯Ó¦ÓÃ£¬°²×¿ºÍiOSÎÒ¶¼Æ«ÏòÓÚÊ¹ÓÃb4x¡£
+
+2015.10.19

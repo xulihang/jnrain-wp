@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="jnrainbbs.uploadPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:jnrainbbs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:Name="chooseImgButton" Icon="Camera" Label="选择照片" Click="AppBarButton_Click"/>
+            <AppBarButton x:Name="uploadButton" Icon="Accept" Label="上传" Click="uploadButton_Click" Tag="0"/>
+            <AppBarButton x:Name="abortButton" Icon="Cancel" Label="放弃" Click="abortButton_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid x:Name="LayoutRoot">
+
+        <!--TODO: 应将内容放入以下网格-->
+        <Grid x:Name="ContentRoot" Margin="0">
+            <Image x:Name="Image1"  Margin="0,100,0,0" />
+            <Button x:Name="Button1" Content="压缩图片质量" Margin="10,10,10,10" VerticalAlignment="Top" HorizontalAlignment="Stretch" Tag="0">
+                <Button.Flyout>
+                    <MenuFlyout>
+                        <ToggleMenuFlyoutItem Text="原图" Click="ToggleMenuFlyoutItem1_Click"/>
+                        <ToggleMenuFlyoutItem Text="中" Click="ToggleMenuFlyoutItem2_Click" />
+                        <ToggleMenuFlyoutItem Text="差" Click="ToggleMenuFlyoutItem3_Click" />
+                    </MenuFlyout>
+                </Button.Flyout>
+            </Button>
+            <ProgressRing x:Name="progressring1" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="100" Height="100"/>
+
+
+
+        </Grid>
+    </Grid>
+</Page>

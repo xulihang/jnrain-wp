@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC35E593-25FD-4F84-AEB1-B0435F757AA9}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>jnrainbbs</RootNamespace>
+    <AssemblyName>jnrainbbs</AssemblyName>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{76F1466A-8B6D-4E39-A767-685A06062A39};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>arm</AppxBundlePlatforms>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Page Include="boardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="chooseEmojiPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="loginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="newpostPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="settingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThreadListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="threadPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uploadPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="boardPage.xaml.cs">
+      <DependentUpon>boardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="chooseEmojiPage.xaml.cs">
+      <DependentUpon>chooseEmojiPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\NavigationHelper.cs" />
+    <Compile Include="Common\ObservableDictionary.cs" />
+    <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="httputils.cs" />
+    <Compile Include="loginPage.xaml.cs">
+      <DependentUpon>loginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="newpostPage.xaml.cs">
+      <DependentUpon>newpostPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="settingPage.xaml.cs">
+      <DependentUpon>settingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThreadListPage.xaml.cs">
+      <DependentUpon>ThreadListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="threadPage.xaml.cs">
+      <DependentUpon>threadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uploadPage.xaml.cs">
+      <DependentUpon>uploadPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\chooseEmoji.html" />
+    <Content Include="Assets\em\01.gif" />
+    <Content Include="Assets\em\01big.gif" />
+    <Content Include="Assets\em\02.gif" />
+    <Content Include="Assets\em\02big.gif" />
+    <Content Include="Assets\em\03.gif" />
+    <Content Include="Assets\em\03big.gif" />
+    <Content Include="Assets\em\04.gif" />
+    <Content Include="Assets\em\04big.gif" />
+    <Content Include="Assets\em\05.gif" />
+    <Content Include="Assets\em\05big.gif" />
+    <Content Include="Assets\em\06.gif" />
+    <Content Include="Assets\em\06big.gif" />
+    <Content Include="Assets\em\07.gif" />
+    <Content Include="Assets\em\07big.gif" />
+    <Content Include="Assets\em\08.gif" />
+    <Content Include="Assets\em\08big.gif" />
+    <Content Include="Assets\em\09.gif" />
+    <Content Include="Assets\em\09big.gif" />
+    <Content Include="Assets\em\10.gif" />
+    <Content Include="Assets\em\10big.gif" />
+    <Content Include="Assets\em\11.gif" />
+    <Content Include="Assets\em\11big.gif" />
+    <Content Include="Assets\em\12.gif" />
+    <Content Include="Assets\em\12big.gif" />
+    <Content Include="Assets\em\13.gif" />
+    <Content Include="Assets\em\13big.gif" />
+    <Content Include="Assets\em\14.gif" />
+    <Content Include="Assets\em\14big.gif" />
+    <Content Include="Assets\em\15.gif" />
+    <Content Include="Assets\em\15big.gif" />
+    <Content Include="Assets\em\16.gif" />
+    <Content Include="Assets\em\16big.gif" />
+    <Content Include="Assets\em\17.gif" />
+    <Content Include="Assets\em\17big.gif" />
+    <Content Include="Assets\em\18.gif" />
+    <Content Include="Assets\em\18big.gif" />
+    <Content Include="Assets\em\19.gif" />
+    <Content Include="Assets\em\20.gif" />
+    <Content Include="Assets\em\21.gif" />
+    <Content Include="Assets\em\22.gif" />
+    <Content Include="Assets\em\23.gif" />
+    <Content Include="Assets\em\24.gif" />
+    <Content Include="Assets\em\25.gif" />
+    <Content Include="Assets\em\26.gif" />
+    <Content Include="Assets\em\27.gif" />
+    <Content Include="Assets\em\28.gif" />
+    <Content Include="Assets\em\29.gif" />
+    <Content Include="Assets\em\30.gif" />
+    <Content Include="Assets\em\31.gif" />
+    <Content Include="Assets\em\32.gif" />
+    <Content Include="Assets\em\33.gif" />
+    <Content Include="Assets\em\34.gif" />
+    <Content Include="Assets\em\35.gif" />
+    <Content Include="Assets\em\36.gif" />
+    <Content Include="Assets\em\37.gif" />
+    <Content Include="Assets\em\38.gif" />
+    <Content Include="Assets\em\39.gif" />
+    <Content Include="Assets\em\40.gif" />
+    <Content Include="Assets\em\41.gif" />
+    <Content Include="Assets\em\42.gif" />
+    <Content Include="Assets\em\43.gif" />
+    <Content Include="Assets\em\44.gif" />
+    <Content Include="Assets\em\45.gif" />
+    <Content Include="Assets\em\46.gif" />
+    <Content Include="Assets\em\47.gif" />
+    <Content Include="Assets\em\48.gif" />
+    <Content Include="Assets\em\49.gif" />
+    <Content Include="Assets\em\50.gif" />
+    <Content Include="Assets\em\51.gif" />
+    <Content Include="Assets\em\52.gif" />
+    <Content Include="Assets\em\53.gif" />
+    <Content Include="Assets\em\55.gif" />
+    <Content Include="Assets\em\56.gif" />
+    <Content Include="Assets\em\57.gif" />
+    <Content Include="Assets\em\58.gif" />
+    <Content Include="Assets\em\59.gif" />
+    <Content Include="Assets\em\60.gif" />
+    <Content Include="Assets\em\61.gif" />
+    <Content Include="Assets\em\62.gif" />
+    <Content Include="Assets\em\63.gif" />
+    <Content Include="Assets\em\64.gif" />
+    <Content Include="Assets\em\65.gif" />
+    <Content Include="Assets\em\66.gif" />
+    <Content Include="Assets\em\67.gif" />
+    <Content Include="Assets\em\68.gif" />
+    <Content Include="Assets\em\69.gif" />
+    <Content Include="Assets\em\70.gif" />
+    <Content Include="Assets\em\71.gif" />
+    <Content Include="Assets\em\72.gif" />
+    <Content Include="Assets\em\73.gif" />
+    <Content Include="Assets\em\74.gif" />
+    <Content Include="Assets\em\75.gif" />
+    <Content Include="Assets\em\76.gif" />
+    <Content Include="Assets\em\77.gif" />
+    <Content Include="Assets\em\78.gif" />
+    <Content Include="Assets\em\79.gif" />
+    <Content Include="Assets\em\80.gif" />
+    <Content Include="Assets\em\81.gif" />
+    <Content Include="Assets\em\82.gif" />
+    <Content Include="Assets\em\83.gif" />
+    <Content Include="Assets\em\84.gif" />
+    <Content Include="Assets\em\85.gif" />
+    <Content Include="Assets\em\86.gif" />
+    <Content Include="Assets\em\87.gif" />
+    <Content Include="Assets\em\88.gif" />
+    <Content Include="Assets\em\89.gif" />
+    <Content Include="Assets\em\90.gif" />
+    <Content Include="Assets\em\91.gif" />
+    <Content Include="Assets\em\92.gif" />
+    <Content Include="Assets\em\93.gif" />
+    <Content Include="Assets\em\94.gif" />
+    <Content Include="Assets\em\95.gif" />
+    <Content Include="Assets\em\96.gif" />
+    <Content Include="Assets\em\97.gif" />
+    <Content Include="Assets\em\em01.gif" />
+    <Content Include="Assets\em\em02.gif" />
+    <Content Include="Assets\em\em03.gif" />
+    <Content Include="Assets\em\em04.gif" />
+    <Content Include="Assets\em\em05.gif" />
+    <Content Include="Assets\em\em06.gif" />
+    <Content Include="Assets\em\em07.gif" />
+    <Content Include="Assets\em\em08.gif" />
+    <Content Include="Assets\em\em09.gif" />
+    <Content Include="Assets\em\em10.gif" />
+    <Content Include="Assets\em\em11.gif" />
+    <Content Include="Assets\em\em12.gif" />
+    <Content Include="Assets\em\em13.gif" />
+    <Content Include="Assets\em\em14.gif" />
+    <Content Include="Assets\em\em15.gif" />
+    <Content Include="Assets\em\em16.gif" />
+    <Content Include="Assets\em\em17.gif" />
+    <Content Include="Assets\em\em18.gif" />
+    <Content Include="Assets\jnrain_splash_logo.png" />
+    <Content Include="Assets\jquery-1.11.3.min.js" />
+    <Content Include="Assets\Logo.scale-240.png" />
+    <Content Include="Assets\myjs.js" />
+    <Content Include="Assets\mystyle.css" />
+    <Content Include="Assets\SmallLogo.scale-240.png" />
+    <Content Include="Assets\SplashScreen.scale-240.png" />
+    <Content Include="Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="Assets\StoreLogo.scale-240.png" />
+    <Content Include="Assets\WideLogo.scale-240.png" />
+    <Content Include="Assets\xx.jpg" />
+    <None Include="Package.StoreAssociation.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="AdDuplex.WinPhone.Extension, Version=9.0.0.5">
+      <Name>AdDuplex SDK for Windows Phone 8.1 %28XAML%29</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.AdMediator81, Version=1.0">
+      <Name>Microsoft.AdMediator81</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AdMediator.WindowsPhone81.MicrosoftAdvertising">
+      <HintPath>..\packages\Microsoft.AdMediator.WindowsPhone81.MicrosoftAdvertising.1.0.13\lib\wpa\Microsoft.AdMediator.WindowsPhone81.MicrosoftAdvertising.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Advertising.Mobile.Common">
+      <HintPath>..\packages\Microsoft.Advertising.WindowsPhone.Xaml81.8.1.40505.0\lib\wpa81\Microsoft.Advertising.Mobile.Common.winmd</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Advertising.Mobile.Display">
+      <HintPath>..\packages\Microsoft.Advertising.WindowsPhone.Xaml81.8.1.40505.0\lib\wpa81\Microsoft.Advertising.Mobile.Display.winmd</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Advertising.Mobile.UI">
+      <HintPath>..\packages\Microsoft.Advertising.WindowsPhone.Xaml81.8.1.40505.0\lib\wpa81\Microsoft.Advertising.Mobile.UI.winmd</HintPath>
+    </Reference>
+    <Reference Include="WriteableBitmapEx.WinRT">
+      <HintPath>..\packages\WriteableBitmapEx.1.5.0.0\lib\wpa81\WriteableBitmapEx.WinRT.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdMediator.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
